@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    /* background-color: #E5D6F0; */
+}
+.form_allignment
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input_field
+{
+    width: 7cm;
+}
+.form_button
+{
+    display: flex;
+    justify-content: center;
+}
+.form_button button
+{
+    margin-left: 5px ;
+}
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .image_card
+  {
+      display: flex;
+      justify-content: center;
+  }
+  .header_text
+  {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+  
+    padding: 20px 50px 0px 50px;
+    position: relative;
+    color: deepskyblue;
+  }

@@ -1,0 +1,130 @@
+<div id="boxes">
+    <div id="leftbox">
+        <div class="sidebar_div">
+            <h4>Filters</h4>
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div>
+                        <section class="example-section">
+                            <span class="example-list-section">
+                                <mat-checkbox class="example-margin" [checked]="allComplete" [color]="task.color"
+                                    [indeterminate]="someComplete()" (change)="setAll($event.checked)">
+                                    {{task.name}}
+                                </mat-checkbox>
+                            </span>
+                            <span class="example-list-section">
+                                <ul>
+                                    <li *ngFor="let subtask of task.subtasks">
+                                        <mat-checkbox [(ngModel)]="subtask.completed" [color]="subtask.color"
+                                            (ngModelChange)="updateAllComplete()">
+                                            {{subtask.name}}
+                                        </mat-checkbox>
+                                    </li>
+                                </ul>
+                            </span>
+                        </section>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div>
+                        <section class="example-section">
+                            <span class="example-list-section">
+                                <mat-checkbox class="example-margin" [checked]="allComplete" [color]="task.color"
+                                    [indeterminate]="someComplete()" (change)="setAll($event.checked)">
+                                    {{task.name}}
+                                </mat-checkbox>
+                            </span>
+                            <span class="example-list-section">
+                                <ul>
+                                    <li *ngFor="let subtask of task.subtasks">
+                                        <mat-checkbox [(ngModel)]="subtask.completed" [color]="subtask.color"
+                                            (ngModelChange)="updateAllComplete()">
+                                            {{subtask.name}}
+                                        </mat-checkbox>
+                                    </li>
+                                </ul>
+                            </span>
+                        </section>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+
+    <div id="middlebox">
+        <mat-grid-list cols="4" rowHeight="2:4" gutterSize="10px">
+            <mat-grid-tile>
+                <div>
+                    <img src="https://static.fibre2fashion.com/MemberResources/LeadResources/1/2017/8/Seller/17131713/Images/17131713_0_2206c90fc3677b4bb903d75424097ff0.jpg"
+                        class="image_box" alt="">
+                    <p>My Name is Raju Basak</p>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div>
+                    <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPSUR-T-MEN-COPATE2956072B022AAD/1586406885432_0..jpg"
+                        class="image_box" alt="">
+                    <p>My Name is Raju Basak</p>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3VpdHxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        class="image_box" alt="">
+                    <p>My Name is Raju Basak</p>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+.example-card {
+    max-width: 680px;
+    border-radius: 0;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+.example-card2 {
+    max-width: 300px;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+.Offer_box
+{
+    display: flex;
+    justify-content: space-between;
+    top: 5px;
+    top: 5px;
+    position: relative;
+    background-color: antiquewhite;
+}
+.Offer_box .Inner_OfferCards
+{
+    position: relative;
+    display: flex;
+}
+.Offer_box .Inner_OfferCards .Inner_OfferCardsdiv1
+{
+    margin-right: 30px;
+}
+.mat-card > :last-child:not(.mat-card-footer), .mat-card-content > :last-child:not(.mat-card-footer) {
+    margin-bottom: -16px;
+}
+.controlButtons
+{
+    border: 1px solid;
+    border-radius: 16px;
+    display: flex;
+    width: 7%;
+}
+.btn_submit
+{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.vl {
+    border-left: 1px solid green;
+    height: 30px;
+}
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.SideBar
+{
+    width: 19%;
+    height: 31.5rem;
+    overflow: scroll;
+    position: fixed;
+    overflow-x: hidden;
+}
+.contentdiv
+{
+    width: 80%;
+    height: 31.5rem;
+    position: fixed;
+    background: antiquewhite;
+    left: 7.3cm;
+    overflow: scroll;
+    overflow-x: hidden;
+}

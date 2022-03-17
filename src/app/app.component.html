@@ -1,0 +1,32 @@
+<div>
+  <div class="_navbar">
+    <h4>
+      <span style="color: coral;">LPU</span> <span style="color: black;">Quora</span>
+    </h4>
+    <input type="text" name="" id="" #Inputvalue class="searchbox" placeholder="Search items by name and brand">
+    <p style="position: relative;left: 40px;top: 12px;cursor: pointer;" (click)="funccall(Inputvalue.value)">
+      <mat-icon class="searc">search</mat-icon>
+    </p>
+    <button mat-button (click)="openDialog()" aria-label="Example icon-button with a heart icon">
+      <mat-icon>person_outline</mat-icon>
+      login
+    </button>
+    <button mat-button aria-label="Example icon-button with a heart icon" (click)="createpost()">
+      <!-- <mat-icon matBadge="2" matBadgePosition="before" matBadgeColor="accent" matBadgeSize="small">add_shopping_cart</mat-icon> -->
+      Add Your Post
+    </button>
+  </div>
+
+  <!-- <div class="_navbar_list">
+    <ul class="_navbar_list_ul">
+      <li>
+        <a routerLink="/" style="text-decoration: none;color: white;">Home</a>
+      </li>
+      <li (click)="CheckContent('men')">Spaces</li>
+      <li (click)="CheckContent('women')">Post Answer</li>
+      <li (click)="CheckContent('offers')">Notifications</li>
+      <li></li>
+    </ul>
+  </div> -->
+</div>
+<router-outlet></router-outlet>

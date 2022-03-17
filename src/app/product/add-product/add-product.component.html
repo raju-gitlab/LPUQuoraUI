@@ -1,0 +1,92 @@
+<h4 class="header_text">Add New Product</h4>
+
+<mat-card>
+  <div class="image_card">
+    <mat-card class="example-card">
+      <img mat-card-image
+        src="https://static.softstribe.com/uploads/2016/01/How-to-Remote-Upload-Files-in-WordPress.gif"
+        alt="Photo of a Shiba Inu">
+      <mat-card-content class="image_card">
+        <button mat-raised-button color="primary">
+          <mat-icon>cloud_upload</mat-icon>
+          Upload New
+        </button>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+  <form [formGroup]="ProductForm" (ngSubmit)="SendData()">
+    <div class="form_allignment">
+      <p>
+        <mat-form-field appearance="legacy" class="input_field">
+          <mat-label>Enter Name</mat-label>
+          <input matInput formControlName="Email" placeholder="Placeholder">
+          <mat-hint>Product Name</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy" class="input_field">
+          <mat-label>Enter Amount</mat-label>
+          <input matInput formControlName="Price" placeholder="Placeholder">
+          <mat-hint>Product Price</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Select me</mat-label>
+          <mat-select>
+            <mat-option value="option" *ngFor="let seller of SellersList" (click)="getgUID(seller.sellerguid)" >{{seller.sellerName}}</mat-option>
+            <mat-option value="option">Option2</mat-option>
+            <mat-option value="option">Option1</mat-option>
+          </mat-select>
+          <mat-hint>Product Type</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy" class="input_field">
+          <mat-label>Legacy form field</mat-label>
+          <input matInput placeholder="Placeholder">
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+    </div>
+    <div class="form_allignment">
+      <p>
+        <mat-form-field appearance="legacy" class="input_field">
+          <mat-label>Enter Name</mat-label>
+          <input matInput placeholder="Placeholder">
+          <mat-hint>Product Name</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy" class="input_field">
+          <mat-label>Enter Amount</mat-label>
+          <input matInput placeholder="Placeholder">
+          <mat-hint>Product Price</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Select me</mat-label>
+          <mat-select>
+            <mat-option value="option">Option</mat-option>
+            <mat-option value="option">Option2</mat-option>
+            <mat-option value="option">Option1</mat-option>
+          </mat-select>
+          <mat-hint>Product Type</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy" class="input_field">
+          <mat-label>Legacy form field</mat-label>
+          <input matInput placeholder="Placeholder">
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+    </div>
+    <div class="form_button">
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+      <button mat-raised-button color="warn">Discard</button>
+    </div>
+  </form>
+</mat-card>
